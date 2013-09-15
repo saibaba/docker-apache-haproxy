@@ -1,7 +1,7 @@
 Apache site with haproxy on docker
 ----------------------------------
 
-1. cd apace
+1. cd apache
 2. docker build sai/apache1 .
 3. edit site/index.html and change PRIMARY to SECONDARY
 4. docker build sai/apache2 .
