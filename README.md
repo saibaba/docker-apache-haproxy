@@ -6,7 +6,7 @@ Apache site with haproxy on docker
 3. edit site/index.html and change PRIMARY to SECONDARY
 4. docker build sai/apache2 .
 5. cd ../haproxy
-6. docker build sai/haproxy
+6. docker build sai/haproxy .
 7. ./bare.sh
 
 Running multiple commands in docker
