@@ -53,4 +53,6 @@ References
 * https://github.com/opdemand/deis
 * http://docs.docker.io/en/latest/examples/running_ssh_service/
 * http://www.tldp.org/HOWTO/Ethernet-Bridge-netfilter-HOWTO-3.html
+* http://rbgeek.wordpress.com/2012/09/02/simple-failover-cluster-using-ucarp-on-ubuntu/
+
 
