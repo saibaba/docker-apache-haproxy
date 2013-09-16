@@ -38,6 +38,8 @@ As it stands, there is a problem with above set up. if container hostling haprox
 15. ssh root@localhost -p <ssh port NATTED for HA2> "/usr/sbin/haproxy -D -f /etc/haproxy/haproxy.cfg"
 16. ssh root@localhost -p <ssh port NATTED for HA2> "/usr/sbin/ucarp --interface=eth1 --srcip=192.168.200.5 --addr=192.168.200.1 --vhid=1 --pass=secret -b 1 --upscript=/etc/vip-up.sh --downscript=/etc/vip-down.sh -B"
 
+There is no need to NAT 10001 as you are exposing the IP itself directly to the host via bridging containers with host with br0apache.
+
 Notes
 -----
 You might have to add below line to /etc/apt/sources.list to be able to install ucarp:
@@ -50,4 +52,5 @@ References
 * https://github.com/toscanini/maestro
 * https://github.com/opdemand/deis
 * http://docs.docker.io/en/latest/examples/running_ssh_service/
+* http://www.tldp.org/HOWTO/Ethernet-Bridge-netfilter-HOWTO-3.html
 
