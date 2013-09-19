@@ -46,6 +46,8 @@ You might have to add below line to /etc/apt/sources.list to be able to install 
 
 deb http://ubuntu.mirror.cambrium.nl/ubuntu/ precise main universe
 
+Whenever you shutdown a container, you need to commit it back with the same name to maintain the state created (like apache logs) while it was up. Or bind mount volumes.
+
 References
 ----------
 
@@ -54,5 +56,5 @@ References
 * http://docs.docker.io/en/latest/examples/running_ssh_service/
 * http://www.tldp.org/HOWTO/Ethernet-Bridge-netfilter-HOWTO-3.html
 * http://rbgeek.wordpress.com/2012/09/02/simple-failover-cluster-using-ucarp-on-ubuntu/
-
-
+* https://github.com/hectcastro/docker-riak
+* https://github.com/jpetazzo/pipework
